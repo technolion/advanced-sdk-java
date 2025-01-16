@@ -119,6 +119,7 @@ public class GetProductResponse {
     @JsonProperty("price_increment")
     private String priceIncrement;
 
+    @Deprecated
     @JsonProperty("future_product_details")
     private FutureProductDetails futureProductDetails;
 
@@ -131,8 +132,12 @@ public class GetProductResponse {
     @JsonProperty("approximate_quote_24h_volume")
     private String approximateQuote24hVolume;
 
+    @Deprecated
     @JsonProperty("num_products")
     private int numProducts;
+
+    @JsonProperty("new_at")
+    private String newAt;
 
     public GetProductResponse() {}
 

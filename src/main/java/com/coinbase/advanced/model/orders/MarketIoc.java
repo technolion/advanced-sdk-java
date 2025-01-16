@@ -25,6 +25,12 @@ public class MarketIoc {
     @JsonProperty("base_size")
     private String baseSize;
 
+    @JsonProperty("rfq_enabled")
+    private boolean rfqEnabled;
+
+    @JsonProperty("rfq_disabled")
+    private boolean rfqDisabled;
+
     public String getQuoteSize() {
         return quoteSize;
     }
